@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns | Café & Bistro Blickpunkt Dortmund</title>
+    <meta name="description" content="Erfahren Sie mehr über das Café & Bistro Blickpunkt in Dortmund Lütgendortmund – Ihrem beliebten Treffpunkt für Frühstück, Kaffee und gemütliche Stunden.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1A1A1A;
+            --accent: #C88A58;
+            --bg: #FAFAF7;
+            --card-bg: #FFFFFF;
+            --text: #333333;
+            --text-light: #666666;
+            --border: #E5E5E0;
+            --transition: all 0.3s ease;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        h1, h2, h3, h4, .logo { font-family: 'Playfair Display', serif; color: var(--primary); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .header { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; height: 80px; }
+        .logo { font-size: 1.5rem; font-weight: 700; }
+        .logo span { color: var(--accent); }
+        .nav-menu { display: flex; gap: 2rem; }
+        .nav-menu a { font-size: 0.95rem; font-weight: 500; color: var(--text-light); }
+        .nav-menu a:hover, .nav-menu a.active { color: var(--primary); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .mobile-menu-btn span { display: block; width: 25px; height: 2px; background: var(--primary); }
+        .btn-sm { padding: 0.5rem 1.2rem; font-size: 0.85rem; border-color: var(--primary); color: var(--primary); border: 1px solid var(--primary); border-radius: 4px; font-weight: 600; }
+        .btn-sm:hover { background: var(--primary); color: #fff; }
+        .page-header { padding: 4rem 0 2rem; text-align: center; background: #F5F2EA; }
+        .page-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-header p { color: var(--text-light); }
+        .section { padding: 5rem 0; }
+        .story-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center; }
+        .story-grid h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+        .story-grid p { color: var(--text-light); margin-bottom: 1rem; }
+        .story-features { display: flex; flex-direction: column; gap: 1.5rem; }
+        .feature-box { background: var(--card-bg); border: 1px solid var(--border); padding: 1.5rem; border-radius: 6px; }
+        .feature-box h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .feature-box p { font-size: 0.9rem; margin-bottom: 0; color: var(--text-light); }
+        .footer { background: var(--primary); color: #fff; padding: 4rem 0 2rem; margin-top: 5rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-bottom: 3rem; }
+        .footer h3, .footer h4 { color: #fff; margin-bottom: 1rem; }
+        .footer p, .footer a { color: #aaa; font-size: 0.95rem; margin-bottom: 0.5rem; display: block; }
+        .footer a:hover { color: #fff; }
+        .copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; color: #777; font-size: 0.85rem; text-align: center; }
+        @media (max-width: 900px) {
+            .story-grid, .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .nav-menu { display: none; }
+            .mobile-menu-btn { display: flex; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Café & Bistro Blickpunkt<span>.</span></a>
+            <nav class="nav-menu">
+                <a href="index.html">Startseite</a>
+                <a href="about.html" class="active">Über uns</a>
+                <a href="services.html">Speisekarte</a>
+                <a href="contacts.html">Kontakt</a>
+            </nav>
+            <a href="contacts.html" class="btn btn-sm">Tisch anfragen</a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Über das Café & Bistro Blickpunkt</h1>
+                <p>Ihr gemütlicher Anlaufpunkt für Genuss und Geselligkeit in Dortmund.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container story-grid">
+                <div>
+                    <h2>Herzlich Willkommen im Blickpunkt</h2>
+                    <p>Das Café & Bistro Blickpunkt in der Limbecker Str. 17 in Dortmund ist bekannt für seine einladende Atmosphäre und hervorragende Qualität. Als einer der Top-Plätze für Frühstück und Brunch in der Stadt schätzen unsere Gäste die Vielfalt und Frische unserer Angebote.</p>
+                    <p>Ob knusprige Brötchen, feiner Aufschnitt, Käse, knackige Gurken und Tomaten oder süße Versuchungen wie hausgemachte Kuchen – bei uns steht Ihr kulinarisches Wohlbefinden im Mittelpunkt.</p>
+                    <p>Kommen Sie vorbei, genießen Sie eine Tasse aromatischen Kaffee und verbringen Sie eine schöne Zeit bei uns.</p>
+                </div>
+                <div class="story-features">
+                    <div class="feature-box">
+                        <h3>🌟 Top-Bewertet</h3>
+                        <p>Zählt zu den besten Adressen für Frühstück und Brunch in Dortmund.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>☕ Gemütliches Ambiente</h3>
+                        <p>Der ideale Ort zum Entspannen, Verweilen und Genießen mit Freunden oder Familie.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🍰 Täglich Frisch</h3>
+                        <p>Hausgemachte Kuchen, Salate und kleine Snacks mit viel Liebe zubereitet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Café & Bistro Blickpunkt</h3>
+                <p>Limbecker Str. 17<br>44388 Dortmund, Deutschland</p>
+                <p>Telefon: <a href="tel:+4923198120531">+49 231 98120531</a></p>
+            </div>
+            <div>
+                <h4>Öffnungszeiten</h4>
+                <p>Montag – Samstag: 08:30 – 19:00<br>
+                Sonntag: 13:00 – 19:00</p>
+            </div>
+            <div>
+                <h4>Social Media</h4>
+                <p><a href="https://instagram.com/cafe_blickpunkt" target="_blank">Instagram @cafe_blickpunkt</a></p>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 Café & Bistro Blickpunkt Dortmund. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('.nav-menu');
+            if (mobileBtn && navMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+                    if (navMenu.style.display === 'flex') {
+                        navMenu.style.flexDirection = 'column';
+                        navMenu.style.position = 'absolute';
+                        navMenu.style.top = '80px';
+                        navMenu.style.left = '0';
+                        navMenu.style.width = '100%';
+                        navMenu.style.background = 'var(--bg)';
+                        navMenu.style.padding = '1.5rem 2rem';
+                        navMenu.style.borderBottom = '1px solid var(--border)';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
